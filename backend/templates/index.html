@@ -33,7 +33,7 @@ body {
 				<p>These are the services I found, if you refresh the page the IPs of the workers should change:</p>
 				<ul>
 				{% for service in services %}
-					<li><h2>{{service.name}} - {{service.addr}}</h2><strong>Worker Response:</strong>{{service.text|safe}}
+					<li><h2>{{service.name}} - {{service.addr}}</h2><strong>Service Response:</strong> {{service.text|safe}}
 						<p>Chose one out of {{service.num_hosts}} possible hosts</p>
 					</li>
 				{% endfor %}
