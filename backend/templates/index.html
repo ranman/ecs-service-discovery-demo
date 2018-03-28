@@ -21,8 +21,10 @@ body {
 		<div class="row justify-content-md-center">
 			<div class="col">
 				<p>This is a short demo of service discovery in <a href="https://aws.amazon.com/ecs/">Amazon ECS</a>.</p>
-				
-				<p>You can find more details in the <a href="https://aws.amazon.com/blogs/aws/amazon-ecs-service-discovery/">blog post</a>.</p>
+				<p>Let's imagine we have a social network with a number of container powered microservices like "auth", "backend", "user", "timeline", "feed", "worker", "friend", and more. We can have all of these services in their own autoscaling groups so they respond to changing loads.</p>
+				<p>As our tasks scale up and down in response to load ECS is able to use <a href="https://aws.amazon.com/route53/">Amazon Route 53</a> to add and remove DNS records for each task.</p>
+				<p>Our clients can either query for possible hosts (over API or DNS) or just connect to whatever IP the host resolves to. Below you can see an example of enumerating the services and hosts with the ListServices and ListInstances API calls.</p>
+				<p>You can find more details on service discovery in the <a href="https://aws.amazon.com/blogs/aws/amazon-ecs-service-discovery/">blog post</a> and in the <a href="https://github.com/ranman/ecs-service-discovery-demo">code</a>.</p>
 			</div>
 		</div>
 		<hr>
