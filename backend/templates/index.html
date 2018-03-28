@@ -35,7 +35,7 @@ body {
 				<ul>
 				{% for service in services %}
 					<li><h2>{{service.name}} - {{service.addr}}</h2><strong>Worker Response:</strong>{{service.text|safe}}
-						<p>Chose one out of {{service.num_hosts}} posible hosts</p>
+						<p>Chose one out of {{service.num_hosts}} possible hosts</p>
 					</li>
 				{% endfor %}
 				</ul>
